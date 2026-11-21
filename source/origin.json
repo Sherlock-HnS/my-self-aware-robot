@@ -4,8 +4,8 @@
   "title": "[PILL PACK] My Self-Aware Robot",
   "author": "Eddygar",
   "status": "extracted_verified",
-  "acquisition": "existing_steam_client_installation",
-  "steamcmd_download_completed": false,
+  "acquisition": "steamcmd",
+  "steamcmd_download_completed": true,
   "source_workshop_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3738153329",
   "source_archive_sha256": "4314269fcbbaace4eaa6ed16f96c88dc5e70943c487008b59c9f14b2c69e1fac",
   "gma_header": {
