@@ -1,0 +1,752 @@
+[
+  {
+    "path": "lua/autorun/client/cl_elberr2.lua",
+    "size": 6047,
+    "crc": 1414235842,
+    "sha256": "2b12bf18ee6ad5c84761fab48d27690879cc5597599fd4ff91a82812116f5120"
+  },
+  {
+    "path": "lua/autorun/client/cl_elbert.lua",
+    "size": 6232,
+    "crc": 1928874134,
+    "sha256": "edeeffd74d160aa4e8ac9c8c956df5afd777494f9d26377a630cdf67f7291abd"
+  },
+  {
+    "path": "lua/autorun/elberr2.0fooootsteepsoundss.lua",
+    "size": 329,
+    "crc": 2682731053,
+    "sha256": "a0955b54f9a6d8d29860fd956b0fcf5f6265f18e4b93f6419df3b4e781c0cb68"
+  },
+  {
+    "path": "lua/autorun/elberr2.0pillbaseyesyesy.lua",
+    "size": 2779,
+    "crc": 2099812969,
+    "sha256": "30d9210f510b57299f437d262d9fdef2cfc22cd96be670c5c4eb1b0689534738"
+  },
+  {
+    "path": "lua/autorun/elberranimsoundeddy.lua",
+    "size": 563,
+    "crc": 4071122524,
+    "sha256": "9276b5c43606ae2ee9440fc5b2df13352245ebd18dcf79cad810ce3a9d8063c5"
+  },
+  {
+    "path": "lua/autorun/include/elber2.0.lua",
+    "size": 110163,
+    "crc": 3894145301,
+    "sha256": "dcd3ce31fbe5ee73e5712c60312d6b0f27dc82484a97eb9859d1471a9922e9ae"
+  },
+  {
+    "path": "lua/autorun/server/elbertcommand.lua",
+    "size": 161,
+    "crc": 1675518263,
+    "sha256": "a0fecc98730ede4a9e18650df9fed6b15fb64588a49ddb0fbebfa13eb468ae1d"
+  },
+  {
+    "path": "lua/entities/elberrr_minirobot.lua",
+    "size": 10633,
+    "crc": 2014562514,
+    "sha256": "82f7519e5204f40d385bdd8bd4829a91dfb24dd71c9b14b203cca90b1cc6baf1"
+  },
+  {
+    "path": "materials/abilicons/charge_icon_yeah.png",
+    "size": 244577,
+    "crc": 1164173627,
+    "sha256": "54e4b32c0d6e652c5b1869618c7c50c2ea23a7ac496f84becc74621a4d5319bc"
+  },
+  {
+    "path": "materials/abilicons/elberr_icons.png",
+    "size": 269834,
+    "crc": 3977685318,
+    "sha256": "9425c0291597da6a414c4ea08546b67b7a09ef8a73b62ec593d87a73ceb5dcd6"
+  },
+  {
+    "path": "materials/elberrmisc/barelberr.png",
+    "size": 1477,
+    "crc": 3167740877,
+    "sha256": "3969e8f534c4ac551548f83b30c344b8e619166baee4b960472eeaa10edc281b"
+  },
+  {
+    "path": "materials/elberrmisc/bluevignetteelberr.png",
+    "size": 181130,
+    "crc": 2332861907,
+    "sha256": "6b8d1a645595b912036e3b1de1fa3c5aecd816a0ac5fb7317cc13e8c1c813b55"
+  },
+  {
+    "path": "materials/elberrmisc/charge_icon_for_elberr_not_used.png",
+    "size": 501236,
+    "crc": 2033539615,
+    "sha256": "e13aff53400d13cd5986a78b9d585147800158e267499162c0fabe3285815187"
+  },
+  {
+    "path": "materials/elberrmisc/charge_icon_for_elberr_while_using.png",
+    "size": 458553,
+    "crc": 2945489270,
+    "sha256": "83925d3638695b1883ff2d361e0134afabffb5629293722f43c0b7dc4f95d80a"
+  },
+  {
+    "path": "materials/icon/q_menu_icon.png",
+    "size": 2625852,
+    "crc": 3129226822,
+    "sha256": "76b5969bb358c69e5784043335c64ec98ebbd3f1d302c7ce537bc98e83ef8769"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr/arms_d.vtf",
+    "size": 5592640,
+    "crc": 1353011728,
+    "sha256": "066c969cb165ac7deb9b48c320e4f867f47e51f0d31783686362f668e2d1b9bf"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr/arms_e.vtf",
+    "size": 1398336,
+    "crc": 1549921181,
+    "sha256": "f317c4016999f7630981fc2ae99dcf6830e97336cb403b78b7f18e601ad1baed"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr/arms_n.vtf",
+    "size": 5592640,
+    "crc": 1319056006,
+    "sha256": "f19670b9af13c7c7f024160f78d7a4892a1f9a424cb570675a87776892e528ce"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr/arms_s.vtf",
+    "size": 2796424,
+    "crc": 3231646001,
+    "sha256": "9c6c0067008ae10490d70080ee3e002fd3b8336e8a2ac2a4ced1380553e803a6"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr/armstexture.vmt",
+    "size": 884,
+    "crc": 2142282109,
+    "sha256": "2ab6358866ea4bc5bb5b2bada333729fc2c98b81d54b7e7c2bcd11f9b636dc34"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr/body_d.vtf",
+    "size": 5592640,
+    "crc": 3444703293,
+    "sha256": "17244f30fe6ddbb6f3403c2a41a0fefa6b2d4e25808b742034eaf6ddcf001685"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr/body_e.vtf",
+    "size": 699272,
+    "crc": 476178599,
+    "sha256": "0bab3f5e2412052d43bd34d67bc6c1e54a074116fd20ba69f2bba17f47dbb79b"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr/body_n.vtf",
+    "size": 5592640,
+    "crc": 3169770810,
+    "sha256": "0d9e9211ebfbd4dcb6a3750bd4cd13fc2382038dd1b7ac5b2ad0dff574c4133c"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr/body_s.vtf",
+    "size": 2796424,
+    "crc": 3222299833,
+    "sha256": "dd1e82bdf1c45da3b52d4479a4486729502c485b6ee8ced2a7fd856ff473a00f"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr/bodytexture.vmt",
+    "size": 885,
+    "crc": 547565929,
+    "sha256": "74f4eb4a33dc508f413bd38a21a6ccdde17befb450d5224e7022dad36bc1738b"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr/eye_d.vtf",
+    "size": 1398336,
+    "crc": 762393680,
+    "sha256": "a5caf8e5c500ae9f5ca3ab0d9248a67359b35ff71c017cc6a75caa3effa6900b"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr/eye_s.vtf",
+    "size": 699272,
+    "crc": 3639586840,
+    "sha256": "744d8aa0dbb6335013feb5a46b8712c9e3f446cb62eee48b8f43524b717e5db3"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr/eyemat.vmt",
+    "size": 422,
+    "crc": 222302361,
+    "sha256": "8b11b71a3477c6c8283992ce20c04260aa02361cb0e4727f0008a75bcd5f296e"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr/flat.vtf",
+    "size": 136,
+    "crc": 558597780,
+    "sha256": "186c1b72fc21bf2f02cde597dc4b746cf443fee01541faa01d889c49e9402197"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr/head.vmt",
+    "size": 506,
+    "crc": 3371900575,
+    "sha256": "f568790d9eddb25e86f7fbfe9a9f96d61baca5f4589861fb92309849f6017fab"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr/head_d.vtf",
+    "size": 1398336,
+    "crc": 1882920673,
+    "sha256": "5149d6632e9da69a604b5b2ef4880ba7cdbb9519bce210503f3bce4ecbcf382d"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr/head_n.vtf",
+    "size": 1398336,
+    "crc": 2696051350,
+    "sha256": "e436997139409c09e6703aa54e1ca93817da908a3018f5a9c74748be785de193"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr/head_s.vtf",
+    "size": 699272,
+    "crc": 797078766,
+    "sha256": "e39b706afb560eb385cb6cee79bba4cca1bec15b07041adceefe0cdc16bf5c8a"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr/legs_d.vtf",
+    "size": 1398336,
+    "crc": 2598948761,
+    "sha256": "374c441456c3245a4f6da1e89e6f0f61fe1734cdcdce7b2171fadff19884502d"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr/legs_e.vtf",
+    "size": 699272,
+    "crc": 3171089606,
+    "sha256": "0188c16975c77dc0b6441afc4f6f495f1e430142dfe4dd4b2e553c5c2e0df753"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr/legs_n.vtf",
+    "size": 1398336,
+    "crc": 2852160257,
+    "sha256": "dc61a990189e016541d739bf6c769117ec93505a04445b538447f67c63bca6a0"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr/legs_s.vtf",
+    "size": 699272,
+    "crc": 4142912353,
+    "sha256": "100c41813d07e10b21ff4b15251a1d28ff3fcf0899135ff50b517fcb4058cf1e"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr/legstexture.vmt",
+    "size": 885,
+    "crc": 533469796,
+    "sha256": "c105d95a088598427e880980861d8dbb84e4e3b5697d5fe919069c5205af366e"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr/spring.vmt",
+    "size": 373,
+    "crc": 3101377093,
+    "sha256": "e68d13374ecc201028f4280143b8eb3726e9a19e69c41ba7825ea32142c5fbaf"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr/spring_d.vtf",
+    "size": 43872,
+    "crc": 1142125549,
+    "sha256": "0c08426f699eeea91cd1fee2866279fbdea75c4048ced314a34d5b946379fc13"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr/white.vtf",
+    "size": 349760,
+    "crc": 3544566188,
+    "sha256": "4cc3ab6dc36e50b8011aff06f25ade4af48e0cd09bfa762d953bf62fee0dfe95"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr/wires.vmt",
+    "size": 443,
+    "crc": 4125076519,
+    "sha256": "6f871554110e4e744642af89c63c24c19e5f8d4dee16d4516df4c7aa5c8b16dd"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr/wires_d.vtf",
+    "size": 699272,
+    "crc": 2163755926,
+    "sha256": "ef7903d198992a2ac0f7c03fb7ddba1cfd431aab1096cf88a46262e94e568579"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr2/body_d.vtf",
+    "size": 2796424,
+    "crc": 4245250643,
+    "sha256": "c90349ac7098548e45e0bd4a59c1540809ddabf02eaafba704bae53ef95549fe"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr2/body_n.vtf",
+    "size": 2796424,
+    "crc": 945248532,
+    "sha256": "4da4cd466331c5e06fd12812f7b48f81c47caa0981d2ed3aff047d434718436d"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr2/bolts.vmt",
+    "size": 350,
+    "crc": 399064253,
+    "sha256": "9ad3262718e830b084db5f194e0662c17e7e28b9bc09a59d09a44a9dbba5a13b"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr2/eye.vmt",
+    "size": 470,
+    "crc": 3150715353,
+    "sha256": "1ab03c5cf14cc5a71370f38bd98753703db3518ba38f549e815f3b91e10a7347"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr2/eye_d.vtf",
+    "size": 5592640,
+    "crc": 291693129,
+    "sha256": "2a6f37ea75a90fa1b4c143d52c6800283465d118c8aa343f8f18d2a41bcf887b"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr2/eye_s.vtf",
+    "size": 2796424,
+    "crc": 96903216,
+    "sha256": "a76bc061ace4beae27a2e1d67eb72e27439f5e74065caddbbcb75bfae6738546"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr2/flat.vtf",
+    "size": 136,
+    "crc": 558597780,
+    "sha256": "186c1b72fc21bf2f02cde597dc4b746cf443fee01541faa01d889c49e9402197"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr2/headmat.vmt",
+    "size": 432,
+    "crc": 1762153023,
+    "sha256": "6eed5edda1d8db2dcff150c78c032dc8a2c11b0862ade88cf54ac8ec30617f1f"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr2/limbs_d.vtf",
+    "size": 5592640,
+    "crc": 1218153072,
+    "sha256": "e60d12e23543377328d58fbc86667271d10e5a10ec64cb611f38da13311ffbb2"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr2/limbs_n.vtf",
+    "size": 2796424,
+    "crc": 678114633,
+    "sha256": "a4d43b843733f2645827ad702b42c717aeacecded30baf0375ff5dd918c50089"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr2/limbstexture.vmt",
+    "size": 354,
+    "crc": 176156772,
+    "sha256": "6d3af69a7577f0afc41f10305f642d7599251ca281c67d31facceee494a34984"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr2/spring_d.vtf",
+    "size": 5592640,
+    "crc": 1892130848,
+    "sha256": "fdd54f26434e9fd52fc53e9adb1f7c1ad62ea81a6645048a80a3aec62e3affca"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr2/springstexture.vmt",
+    "size": 419,
+    "crc": 3786147693,
+    "sha256": "cee252cf0440ea3038f71a4340413b3217085b0358a9ced53c42af9b3bde6934"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr2/thing_d.vtf",
+    "size": 5592640,
+    "crc": 289627676,
+    "sha256": "ab874bacbc3a795d321c702f0ffd793a839af010c30d771318a9f6d7c2084268"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr2/wire2_d.vtf",
+    "size": 5592640,
+    "crc": 3477491255,
+    "sha256": "d205efe13e38424199c28445a0d0d80cc8d38adc7171ededd0da6e1821cdb446"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr2/wire2_n.vtf",
+    "size": 5592640,
+    "crc": 3140657402,
+    "sha256": "cef245e112c4ea36d928206c707d8c9d230ec146fdd61c153a73e9b97caeeb09"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr2/wire_d.vtf",
+    "size": 1398336,
+    "crc": 3170965017,
+    "sha256": "0b5815d82c09c7963ac235276aac88569520710f9fe61d194508797583ce6e84"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr2/wires.vmt",
+    "size": 350,
+    "crc": 4046949913,
+    "sha256": "11151dbeaf23d2b4a52e53da9b2e683c88b8f8acb2359a539543f019d30902ac"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberr2/wiretexture.vmt",
+    "size": 354,
+    "crc": 1575474658,
+    "sha256": "38ea18a62cafba219cb4961287e4ff7cd7e972403273bda5d338f797a646f9e0"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberrmini/body1.vmt",
+    "size": 519,
+    "crc": 1649422385,
+    "sha256": "4b41c33c28fd6ec5574d365db679f968df34bf8d8d938b6136675e34d98b43e4"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberrmini/body1_d.vtf",
+    "size": 5592640,
+    "crc": 3002294173,
+    "sha256": "303c6db8078e51d51afc40696aca20d88a04df909a1591662f3fafdecf732460"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberrmini/body1_n.vtf",
+    "size": 5592640,
+    "crc": 4129175532,
+    "sha256": "9937ccb079fb3cbaa1f1a4fc960227bf06606ec402f1e7b63544f3e9e55531c4"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberrmini/body1_s.vtf",
+    "size": 2796424,
+    "crc": 2768116392,
+    "sha256": "413f40be4bdbb6069048d1eba5edc0bacb5868f9ab9cab37085b3e89c0b9a22c"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberrmini/body2_d.vtf",
+    "size": 5592640,
+    "crc": 1745910561,
+    "sha256": "19782c257f73c1c9d2b4022db31be77dd1f936b22e662cd2e31330be385b391a"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberrmini/body2_n.vtf",
+    "size": 5592640,
+    "crc": 135191213,
+    "sha256": "bb122be9cb79cb62e384170aab8f5916f452d97f584c7c43fb41393aaebdddc8"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberrmini/body2_s.vtf",
+    "size": 2796424,
+    "crc": 432762516,
+    "sha256": "b68ad9d0b0d34d95749e9a00227d05c5866fe17cf637121d06dc0004ce7d8471"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberrmini/openings.vmt",
+    "size": 428,
+    "crc": 4060439230,
+    "sha256": "de3bae3777fdf7ca085750093b442c2aaa8e7d46bb7bd1eab29fc12623bdd134"
+  },
+  {
+    "path": "materials/models/whynotboi/pills/elberrmini/wires.vmt",
+    "size": 378,
+    "crc": 4139479670,
+    "sha256": "2104fd91fd409451852415fccdc5cf8cb3e4743c25dd2af598e56b544edc32ff"
+  },
+  {
+    "path": "materials/pills/pill_elberr2.png",
+    "size": 4340015,
+    "crc": 3403150333,
+    "sha256": "587129c143d51bed3c9b68ac74f2fbc8bebcd24fbbfebe830e345f1ca3af44fe"
+  },
+  {
+    "path": "materials/pills/pill_selfawarerobotelbert.png",
+    "size": 2628768,
+    "crc": 2512566050,
+    "sha256": "66a7553bc4a4222ed0f19867529f2580467f0704006c17bd0a2ee9438ffc663e"
+  },
+  {
+    "path": "models/whynotboi/pills/elberr/elberr.dx90.vtx",
+    "size": 479786,
+    "crc": 2109201285,
+    "sha256": "a40379f2df8e6111275ec39025b8e772fc13cc276898f4498adc34dc042bf9b4"
+  },
+  {
+    "path": "models/whynotboi/pills/elberr/elberr.mdl",
+    "size": 225352,
+    "crc": 93836863,
+    "sha256": "9cf2514b68727eec0e604787ea35a92859d07ce46aab301b175aa8781b4656ee"
+  },
+  {
+    "path": "models/whynotboi/pills/elberr/elberr.vvd",
+    "size": 1969984,
+    "crc": 141135147,
+    "sha256": "a6ee0840f7e371971885be40f813ba2e246e7a8b281be0919a5e95d1bc70e516"
+  },
+  {
+    "path": "models/whynotboi/pills/elberr2/elberr2.dx80.vtx",
+    "size": 1131143,
+    "crc": 3221585804,
+    "sha256": "b93b0bb7ed3018070de739b1fefd3b284425c87ad39e595223af84140b792d2e"
+  },
+  {
+    "path": "models/whynotboi/pills/elberr2/elberr2.dx90.vtx",
+    "size": 1130991,
+    "crc": 2441259750,
+    "sha256": "3709a8461a3aa27e9713ddaef000343f32a1060bf368e3650803155b7126fbc8"
+  },
+  {
+    "path": "models/whynotboi/pills/elberr2/elberr2.mdl",
+    "size": 338452,
+    "crc": 3651843678,
+    "sha256": "613fd1a18a49b5d294d9b8d7a2c89ed357142954f690491bb40f11f4ade02e4e"
+  },
+  {
+    "path": "models/whynotboi/pills/elberr2/elberr2.vvd",
+    "size": 4325568,
+    "crc": 3465431251,
+    "sha256": "efb098f2543ef0de797dd79c1abc755b93a4311c6b8b4df1c3271b2bc9cae251"
+  },
+  {
+    "path": "models/whynotboi/pills/elberrmini/elberrmini.dx90.vtx",
+    "size": 149215,
+    "crc": 490056157,
+    "sha256": "07945dc832cac1a1b70c27662a55f4233cc9fc86876f8bb24a0634b5b0542a82"
+  },
+  {
+    "path": "models/whynotboi/pills/elberrmini/elberrmini.mdl",
+    "size": 86580,
+    "crc": 3086291604,
+    "sha256": "f9051806ca829b4cbea5d62a09ee206cf7879331489a62cff287973a70f91abe"
+  },
+  {
+    "path": "models/whynotboi/pills/elberrmini/elberrmini.vvd",
+    "size": 645696,
+    "crc": 3537601624,
+    "sha256": "6618f32773319152afb127e189da16aadd24bee55372afe091e4683bf0a737d8"
+  },
+  {
+    "path": "sound/elberrsound/elberr/bbelberr_chargehit.ogg",
+    "size": 38046,
+    "crc": 3980191714,
+    "sha256": "b52ff5b9ea937b8b061113b8566b6f5837d18a854f43eaff5656dcedd859d6a2"
+  },
+  {
+    "path": "sound/elberrsound/elberr/bbelberr_chargemiss.ogg",
+    "size": 66145,
+    "crc": 300706787,
+    "sha256": "125166716eb3f382190825b705bafb92810666d05e7e2b11fcf17e178d86f18a"
+  },
+  {
+    "path": "sound/elberrsound/elberr/bbelberr_chargewallslam.ogg",
+    "size": 79127,
+    "crc": 3113450628,
+    "sha256": "a86e02ff9f3e840eaf0cf0871f65db627eb1de1e0370f5327f6bff3e4907a72e"
+  },
+  {
+    "path": "sound/elberrsound/elberr/bbelberr_chargewarning.ogg",
+    "size": 84251,
+    "crc": 434661467,
+    "sha256": "c053ae8f8c98216d2dfe037406f7fca1f6154a701cdc0b0538803ea36d24a297"
+  },
+  {
+    "path": "sound/elberrsound/elberr/bbelberr_idle_drone.ogg",
+    "size": 222789,
+    "crc": 4123639343,
+    "sha256": "3a6990c3d7835585fb9e93fc9371f16b32640c3e975512bb4b3350a515bd508b"
+  },
+  {
+    "path": "sound/elberrsound/elberr/bbelberr_idle_droneloop.wav",
+    "size": 1609800,
+    "crc": 205467504,
+    "sha256": "03deb96f784a267f03f6ee561c487407b52c37a7606fd217ee16180a3997be0c"
+  },
+  {
+    "path": "sound/elberrsound/elberr/bbelberr_idleloop.wav",
+    "size": 1014452,
+    "crc": 463426243,
+    "sha256": "7b7357a737f9941f01b732ec7b9db6b42dd91a4eb8d7a08d38b099738b253445"
+  },
+  {
+    "path": "sound/elberrsound/elberr/bbelberr_killanim.ogg",
+    "size": 109632,
+    "crc": 3839109351,
+    "sha256": "f95b4f4c862adbcdd13d539824302704b67a652343c4604f1be0eb6a5258cc3a"
+  },
+  {
+    "path": "sound/elberrsound/elberr/bbelberr_startup.ogg",
+    "size": 125078,
+    "crc": 2291927065,
+    "sha256": "21fbf59f2578e239319f2ed9af4bfff99eaaaf922adaec773bba0c133b9f1bd7"
+  },
+  {
+    "path": "sound/elberrsound/elberr/bbelberr_step1.ogg",
+    "size": 25614,
+    "crc": 379339020,
+    "sha256": "bfdb37b39e44886cf290e999c6df3e36713233e9841185d128cf25f51473c916"
+  },
+  {
+    "path": "sound/elberrsound/elberr/bbelberr_step2.ogg",
+    "size": 23590,
+    "crc": 1730626666,
+    "sha256": "3b005531db08793396cc99dcb40ef30a61d06b1211db79aa842d4fb5c8baad5a"
+  },
+  {
+    "path": "sound/elberrsound/elberr/bbelberr_step3.ogg",
+    "size": 21493,
+    "crc": 2240572605,
+    "sha256": "d181e6fd66ebf44fb093061ece09950a91abc1a6586707b087204629890ec702"
+  },
+  {
+    "path": "sound/elberrsound/elberr/bbelberr_step4.ogg",
+    "size": 20851,
+    "crc": 3282845345,
+    "sha256": "b4ce8e224d7121612b5ff34cea491c70ee776d73ee0bb3ee533880e86d2ab045"
+  },
+  {
+    "path": "sound/elberrsound/elberr/bbelberr_step5.ogg",
+    "size": 21357,
+    "crc": 2789358206,
+    "sha256": "aabb531371a01b4294dc2f81971d312812de80dd315bf619a8a5df60c5d77856"
+  },
+  {
+    "path": "sound/elberrsound/minirobot/elbite_detect_1.ogg",
+    "size": 92286,
+    "crc": 1627675998,
+    "sha256": "afb913bba03620a6284c89863fccc57ff513b7f95f44b119a6fdf27b8954942f"
+  },
+  {
+    "path": "sound/elberrsound/minirobot/elbite_detect_2.ogg",
+    "size": 108776,
+    "crc": 1374279952,
+    "sha256": "61e58170c61bcfd7df48f4d90a690d4cfafdd2b1aa6ab2b2690db649754a5fed"
+  },
+  {
+    "path": "sound/elberrsound/minirobot/elbite_detect_3.ogg",
+    "size": 101534,
+    "crc": 389451767,
+    "sha256": "d6bb0b366c7e7ec588ec7f6c7cd5ef182c5f5e5a27b5b5ec9350857f398e5222"
+  },
+  {
+    "path": "sound/elberrsound/minirobot/elbite_detect_4.ogg",
+    "size": 89380,
+    "crc": 664991460,
+    "sha256": "84774d12d181870172d5ce57b3edcbc7f47ae6088cfc796fa33d97455a1330d7"
+  },
+  {
+    "path": "sound/elberrsound/minirobot/elbite_detect_5.ogg",
+    "size": 98054,
+    "crc": 1718656258,
+    "sha256": "612fda92c9dacb6ad3ead2620c129523e6c09b8fbd7733b12a4547f16010f59d"
+  },
+  {
+    "path": "sound/elberrsound/minirobot/elbite_detect_6.ogg",
+    "size": 156043,
+    "crc": 3218033954,
+    "sha256": "8e47202463452557824293d2ee5c1bb33ee3d654d34ecef02ea85132887f539e"
+  },
+  {
+    "path": "sound/elberrsound/minirobot/elbite_roamloop.wav",
+    "size": 1058552,
+    "crc": 1856141152,
+    "sha256": "b2a8f5e69587b7e13eb9e664509d5864dffed2e57bab6f4eb01cbb0cc85d4d3b"
+  },
+  {
+    "path": "sound/elberrsound/minirobot/elbite_shutdown.ogg",
+    "size": 44775,
+    "crc": 3817391719,
+    "sha256": "d6f3b538bcad0b64611b72b445047155fd9df57a502e98c5d0d4630d2392de62"
+  },
+  {
+    "path": "sound/elberrsound/minirobot/elbites_alerted_movingloop.wav",
+    "size": 1764152,
+    "crc": 2216722605,
+    "sha256": "f5ac8287dc92d64b2ef70ad67f1f89f609124c21184d3a7d68466106f3930df0"
+  },
+  {
+    "path": "sound/elberrsound/minirobot/elbites_idledroneloop.wav",
+    "size": 1234952,
+    "crc": 1198668836,
+    "sha256": "e8e588742925cf82f8ce0281a6ca15ed55a3eb18cd8e69b2b226ddb7c950cdbc"
+  },
+  {
+    "path": "sound/michael/elberr_crouch_crawl1.wav",
+    "size": 88382,
+    "crc": 583142918,
+    "sha256": "6c2ac1685471294dc2a8a2a62e63c1af76146cbfa7262d45e4dcdb64ab9c3dec"
+  },
+  {
+    "path": "sound/michael/elberr_crouch_crawl2.wav",
+    "size": 88382,
+    "crc": 106386727,
+    "sha256": "428103b5a04de6a03fee43fd8619d827d6d5b291fbccb47b8f1a674b7583a274"
+  },
+  {
+    "path": "sound/michael/elberr_crouch_crawl3.wav",
+    "size": 88382,
+    "crc": 540311126,
+    "sha256": "8ccab79038b46d0f193ea9f30661d466d52243430a4a2bd993d52d5cf8147ce7"
+  },
+  {
+    "path": "sound/michael/elberr_crouch_crawl4.wav",
+    "size": 88382,
+    "crc": 909980102,
+    "sha256": "63724359d4737c2f0e740c543a494a1e10054a96036a3d659208f8cf6643a155"
+  },
+  {
+    "path": "sound/michael/elberr_crouchidle.wav",
+    "size": 705782,
+    "crc": 1739501034,
+    "sha256": "85dcbadd5bb6d484255193bd94d77bba976ca66309ca19d3756bf6cd9b9a31ce"
+  },
+  {
+    "path": "sound/michael/elberr_footstep1.wav",
+    "size": 99406,
+    "crc": 919957327,
+    "sha256": "5051e5bfaaabb00bfdfe7018a6294525bc29fc92fcf061cf43755929dcb1dbed"
+  },
+  {
+    "path": "sound/michael/elberr_footstep2.wav",
+    "size": 99406,
+    "crc": 2050669664,
+    "sha256": "9f8a0776b29226f10027780a63b2afc38bc9afaa2c0b019f287954008d100c4e"
+  },
+  {
+    "path": "sound/michael/elberr_footstep3.wav",
+    "size": 99406,
+    "crc": 2549707471,
+    "sha256": "817ae145eda73d9abbb1132efbbe9c138d98aa33a91e08f34d58130ce7750786"
+  },
+  {
+    "path": "sound/michael/elberr_footstep4.wav",
+    "size": 99406,
+    "crc": 1140149469,
+    "sha256": "e5552655a48a66dea9680e92c6dfb9ba3657623cefa2da495525ecbb359d1ba3"
+  },
+  {
+    "path": "sound/michael/elberr_footstep5.wav",
+    "size": 99406,
+    "crc": 1626311705,
+    "sha256": "9937cb2995a1e8c99a951e777d9f867fe10d05fbd64559c41ec05f5865cc6acd"
+  },
+  {
+    "path": "sound/michael/elberr_idle_fan_noloop.wav",
+    "size": 529382,
+    "crc": 819726538,
+    "sha256": "87295e81e72d14a3af67eff21ca74fe19e228256d8bb465e289e6a3b07ddcef6"
+  },
+  {
+    "path": "sound/michael/elberr_idle_fanloop.wav",
+    "size": 1036534,
+    "crc": 403580536,
+    "sha256": "6c8b39c442e935d916189bac51e63bac25f37dcf8f58ec5af16c2f94a8cd2d28"
+  },
+  {
+    "path": "sound/michael/elberr_idleanim_loop.wav",
+    "size": 1411382,
+    "crc": 2155169281,
+    "sha256": "37413ce07fd1bb84fc169919949d8a9672714227cc934786adf26d0738390865"
+  },
+  {
+    "path": "sound/michael/elberr_idleanim_yesloop.wav",
+    "size": 1411352,
+    "crc": 2218069330,
+    "sha256": "e5bf119fb816ac7e46368a7b76e8e18d47dd342d770af823c5b2070078bdb296"
+  },
+  {
+    "path": "sound/michael/elberr_killanim.wav",
+    "size": 1598806,
+    "crc": 800067089,
+    "sha256": "54c89cf0906122a1b2325eedb6776362bf4553a214df95bc80bff5d22ea553b1"
+  },
+  {
+    "path": "sound/michael/elberr_overcharge.wav",
+    "size": 1411382,
+    "crc": 24100549,
+    "sha256": "57fa51284d6875511e454457752e241263302f320eb6c0d7b57d60f251c037db"
+  },
+  {
+    "path": "sound/michael/elberr_overcharge_globalwarning.wav",
+    "size": 1058582,
+    "crc": 1127901110,
+    "sha256": "1bf61b727ac7e35c0ebbb3f62321a59c38311c1ba433c22e701490567cce93d7"
+  },
+  {
+    "path": "sound/michael/elbertfanloopidlepleasefuckingworkpleaseeeee.wav",
+    "size": 1036504,
+    "crc": 3974541012,
+    "sha256": "1d2c0a095a17ca35e0627a27cf725f21fe8c6aa3506bda676bfbd7d8cc114fa9"
+  }
+]

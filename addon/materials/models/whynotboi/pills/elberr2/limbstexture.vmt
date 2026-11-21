@@ -1,0 +1,21 @@
+"VertexlitGeneric"
+{
+    "$basetexture" "models\whynotboi\pills\elberr2\limbs_d"
+    "$bumpmap" "models\whynotboi\pills\elberr2\limbs_n"
+
+    "$nodecal" "1"
+
+    "$color2" "[.8 .8 .8]"
+
+    "$phong" "1"
+
+    "$phongexponent" "15"
+
+    "$phongboost"    "1"
+
+    "$phongfresnelranges"	"[0.5 1 1]"
+
+    "$phongdisablehalflambert"    "1"
+
+    "$nocull" "1"
+}

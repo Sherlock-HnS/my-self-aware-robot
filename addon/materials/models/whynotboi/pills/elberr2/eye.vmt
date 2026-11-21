@@ -1,0 +1,25 @@
+"VertexlitGeneric"
+{
+    "$basetexture" "models\whynotboi\pills\elberr2\eye_d"
+    "$bumpmap" "models\whynotboi\pills\elberr2\flat"
+
+    "$nodecal" "1"
+
+    "$color2" "[.8 .8 .8]"
+
+    "$rimlight"   "1"
+    "$rimlightexponent"   ".5"
+    "$rimlightboost"  "2"
+
+    "$phong" "1"
+
+    "$phongexponenttexture" "models\whynotboi\pills\elberr2\eye_s"
+
+    "$phongboost"    "1"
+
+    "$phongfresnelranges"	"[0.5 1 1]"
+
+    "$phongdisablehalflambert"    "1"
+
+    "$nocull" "1"
+}

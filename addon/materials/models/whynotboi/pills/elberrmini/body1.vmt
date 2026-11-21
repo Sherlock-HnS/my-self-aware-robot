@@ -1,0 +1,27 @@
+"VertexlitGeneric"
+{
+    "$basetexture" "models\whynotboi\pills\elberrmini\body1_d"
+    "$bumpmap" "models\whynotboi\pills\elberrmini\body1_n"
+
+    "$nodecal" "1"
+
+    "$blendtintbybasealpha" "1"
+
+    "$color2" "[.4 .4 .4]"
+
+    "$rimlight"   "1"
+    "$rimlightexponent"   ".5"
+    "$rimlightboost"  "2"
+
+    "$phong" "1"
+
+    "$phongexponenttexture" "models\whynotboi\pills\elberrmini\body1_s"
+
+    "$phongboost"    "2"
+
+    "$phongfresnelranges"	"[0.5 1 1]"
+
+    "$phongdisablehalflambert"    "1"
+
+    "$nocull" "1"
+}
