@@ -1,10 +1,9 @@
 {
-  "ignore": [],
+  "title": "[PILL PACK] My Self-Aware Robot",
+  "type": "entity",
   "tags": [
     "cartoon",
-    "movie",
-    "realism"
+    "movie"
   ],
-  "title": "[PILL PACK] My Self-Aware Robot",
-  "type": "entity"
+  "ignore": []
 }
