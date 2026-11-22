@@ -72,19 +72,7 @@ hook.Add("OnEntityCreated", "elberr2pillpilliniitialize", function(ent)
                             ply:SetStepSize(hull.z / 4)
                             ply:SetViewOffset(camOffset)
                             ply:SetViewOffsetDucked(camOffset - Vector(0, 0, duckBy*0.15) )
-                            local speed = self.formTable.moveSpeed or {}
-                            ply:SetWalkSpeed(speed.walk or 200)
-                            ply:SetRunSpeed(speed.run or speed.walk or 500)
-
-                            if speed.ducked then
-                                ply:SetCrouchedWalkSpeed(speed.ducked / (speed.walk or 200))
-                            elseif duckBy == 0 then
-                                ply:SetCrouchedWalkSpeed(1)
-                            else
-                                ply:SetCrouchedWalkSpeed(.3)
-                            end
-
-                            ply:SetJumpPower(self.formTable.jumpPower or 200)
+                            self:ApplyMoveSpeed()
                         end
                         pk_pills.mapEnt(ply, self)
 
@@ -120,13 +108,10 @@ hook.Add("OnEntityCreated", "elberr2pillpilliniitialize", function(ent)
                             end
 
                             if self.animFreeze and not self.plyFrozen then
-                                ply:SetWalkSpeed(ply:GetWalkSpeed() / 2)
-                                ply:SetRunSpeed(ply:GetWalkSpeed() / 2)
+                                self:ApplyMoveSpeed()
                                 self.plyFrozen = true
                             elseif not self.animFreeze and self.plyFrozen then
-                                local speed = self.formTable.moveSpeed or {}
-                                ply:SetWalkSpeed(speed.walk or 200)
-                                ply:SetRunSpeed(speed.run or speed.walk or 500)
+                                self:ApplyMoveSpeed()
                                 self.plyFrozen = nil
                             end
 
@@ -943,6 +928,15 @@ end,
             end
         end
 
+        if SherlockHNS and IsValid(entity) and entity:IsPlayer() then
+            return pk_pills.playHNSJumpscare(ply, ent, entity, 4, {
+                camera = "makeragdollinvisduringjumpcam",
+                offset = 50,
+                animation = "jumpscare",
+                sound = "jumpscare",
+            })
+        end
+
         if IsValid(entity) then
             local pill = ent:GetPuppet()
 
@@ -1500,7 +1494,41 @@ attack2 = {
     jump=function(ply,ent)
 
     end
-})
+}, function(form)
+    -- The legacy damage branches are for Sandbox and NPCs.
+    form.hnsKillAPI = true
+    form.hnsAbilities = {
+        { id = "attack", name = "Ataque", key = IN_ATTACK, OnUse = form.attack.func },
+        { id = "roar", name = "Rugido", key = IN_ATTACK2, OnUse = form.attack2.func },
+        { id = "charge", name = "Investida", key = IN_RELOAD, cooldown = 19, duration = 4,
+            OnUse = function(ply, ent)
+                ent:PillAnim("chargestart")
+                ent:PillSound("charge")
+            end,
+            OnTick = function(ply, ent, ab)
+                if not IsValid(ent) or ab.activeUntil - CurTime() > 3.5 then return end
+                local tr = util.TraceHull({
+                    start = ply:WorldSpaceCenter(), endpos = ply:WorldSpaceCenter() + ply:GetForward() * 100,
+                    mins = Vector(-15, -15, -15), maxs = Vector(15, 15, 15), filter = {ply, ent, ent:GetPuppet()},
+                })
+                if tr.HitWorld then
+                    ent:PillAnim("chargeHW")
+                    ent:PillSound("chargehit")
+                    SherlockHNS.Ability.End(ply, "charge")
+                elseif IsValid(tr.Entity) and tr.Entity:IsPlayer() then
+                    if pk_pills.playHNSJumpscare(ply, ent, tr.Entity, 3.5, {
+                        animation = "chargeKW", sound = "chargekillwall", camera = "ELBERR2JUMPCAM",
+                    }) then SherlockHNS.Ability.End(ply, "charge") end
+                elseif ply:OnGround() then
+                    ply:SetVelocity(ply:GetForward() * 100)
+                end
+            end },
+    }
+    form.attack, form.attack2, form.reload = nil, nil, nil
+    pk_pills.bindHNSButtons(form, "ELBERR2KeyBind", {
+        { id = "robot", name = "Mini-robô", button = KEY_T, keyLabel = "T", cooldown = 5 },
+    })
+end)
 
 
 hook.Add("OnEntityCreated", "elberrpillinitialize", function(ent)
@@ -1575,19 +1603,7 @@ hook.Add("OnEntityCreated", "elberrpillinitialize", function(ent)
                             ply:SetStepSize(hull.z / 4)
                             ply:SetViewOffset(camOffset)
                             ply:SetViewOffsetDucked(camOffset - Vector(0, 0, duckBy*0.15) )
-                            local speed = self.formTable.moveSpeed or {}
-                            ply:SetWalkSpeed(speed.walk or 200)
-                            ply:SetRunSpeed(speed.run or speed.walk or 500)
-
-                            if speed.ducked then
-                                ply:SetCrouchedWalkSpeed(speed.ducked / (speed.walk or 200))
-                            elseif duckBy == 0 then
-                                ply:SetCrouchedWalkSpeed(1)
-                            else
-                                ply:SetCrouchedWalkSpeed(.3)
-                            end
-
-                            ply:SetJumpPower(self.formTable.jumpPower or 200)
+                            self:ApplyMoveSpeed()
                         end
                         pk_pills.mapEnt(ply, self)
 
@@ -1615,13 +1631,10 @@ hook.Add("OnEntityCreated", "elberrpillinitialize", function(ent)
                             end
 
                             if self.animFreeze and not self.plyFrozen then
-                                ply:SetWalkSpeed(ply:GetWalkSpeed() / 2)
-                                ply:SetRunSpeed(ply:GetWalkSpeed() / 2)
+                                self:ApplyMoveSpeed()
                                 self.plyFrozen = true
                             elseif not self.animFreeze and self.plyFrozen then
-                                local speed = self.formTable.moveSpeed or {}
-                                ply:SetWalkSpeed(speed.walk or 200)
-                                ply:SetRunSpeed(speed.run or speed.walk or 500)
+                                self:ApplyMoveSpeed()
                                 self.plyFrozen = nil
                             end
 
@@ -2187,16 +2200,13 @@ end)
             if thisthatblahblahblah then return end
             if not IsValid(puppet) then return end
             puppet:SetPlaybackRate(ent.ElberrAnimSpeed)
-            ply:SetWalkSpeed(ent.ElberrSpeedWalk)
-            ply:SetRunSpeed(ent.ElberrSpeedRun)
+            pk_pills.setCostumeMoveSpeed(ent, ent.ElberrSpeedWalk, ent.ElberrSpeedRun)
         end)
 
     net.Receive("elberr25%", function()
         if not IsValid(ent) then return end
         if not state1 then
             state1 = true
-            ent.formTable.moveSpeed.walk = "150"
-            ent.formTable.moveSpeed.run = "600"
             ent.ElberrSpeedWalk = 150
             ent.ElberrSpeedRun = 600
             PrintMessage(HUD_PRINTTALK, "Elberr's Bar Reached 25%!")
@@ -2210,8 +2220,6 @@ end)
         if not IsValid(ent) then return end
         if not state2 then
             state2 = true
-            ent.formTable.moveSpeed.walk = "175"
-            ent.formTable.moveSpeed.run = "620"
             ent.ElberrSpeedWalk = 175
             ent.ElberrSpeedRun = 620
             PrintMessage(HUD_PRINTTALK, "Elberr's Bar Reached 50%!")
@@ -2223,8 +2231,6 @@ end)
         if not IsValid(ent) then return end
         if not state3 then
             state3 = true
-            ent.formTable.moveSpeed.walk = "200"
-            ent.formTable.moveSpeed.run = "640"
             ent.ElberrSpeedWalk = 200
             ent.ElberrSpeedRun = 640
             PrintMessage(HUD_PRINTTALK, "Elberr's Bar Reached 75%!")
@@ -2236,8 +2242,6 @@ end)
         if not IsValid(ent) then return end
         if not state4 then
             state4 = true
-            ent.formTable.moveSpeed.walk = "250"
-            ent.formTable.moveSpeed.run = "670" -- 67
             PrintMessage(HUD_PRINTTALK, "Elberr's Bar Reached 100%! you better start running.")
             ent.ElberrSpeedWalk = 250
             ent.ElberrSpeedRun = 670
@@ -2255,18 +2259,13 @@ end)
                 state3 = false
                 state4 = false
                 thisthatblahblahblah = true
-                ent.formTable.moveSpeed.walk = "120"
-                ent.formTable.moveSpeed.run = "580"
-                ply:SetWalkSpeed(120)
-                ply:SetRunSpeed(580)
+                pk_pills.setCostumeMoveSpeed(ent, 120, 580)
                 PrintMessage(HUD_PRINTTALK, "Elberr's Bar Reached Has Been Reset.")
             end
         end)
 
         ent:CallOnRemove("asdasadasd", function()
             hook.Remove("PlayerFootstep", "CustomFootstepelbert")
-            ent.formTable.moveSpeed.walk = "120"
-            ent.formTable.moveSpeed.run = "580"
             thisthatblahblahblah = true
         end)
     end,
@@ -2295,6 +2294,15 @@ end)
                     end
                 end
             end
+        end
+
+        if SherlockHNS and IsValid(entity) and entity:IsPlayer() then
+            return pk_pills.playHNSJumpscare(ply, ent, entity, 8, {
+                camera = "ELBERJUMPCAM",
+                offset = 50,
+                animation = "jumpscare",
+                sound = "jumpscare",
+            })
         end
 
         if IsValid(entity) then
@@ -2469,10 +2477,9 @@ attack2 = {
    	reload=function(ply,ent)
         if not ent.ElberrCooldown then
         
-        local orgwalkspeed = ply:GetWalkSpeed()
-        local orgrunspeed = ply:GetRunSpeed()
         
         ent.ElberrCooldown = true
+        pk_pills.setHNSCooldown(ent, "overcharge", 20.75)
 
         ent.ElberrReload = true
 
@@ -2503,11 +2510,9 @@ attack2 = {
             if IsValid(puppet) then
                 puppet:SetPlaybackRate(2)
             if not ent.ElberrFaster then
-                ply:SetWalkSpeed(200)
-                ply:SetRunSpeed(650)
+                pk_pills.setCostumeMoveSpeed(ent, 200, 650)
             else
-                ply:SetWalkSpeed(250)
-                ply:SetRunSpeed(690)
+                pk_pills.setCostumeMoveSpeed(ent, 250, 690)
             end
         end
     end)
@@ -2528,8 +2533,7 @@ attack2 = {
             end
         end)
 
-        ply:SetWalkSpeed(orgwalkspeed)
-        ply:SetRunSpeed(orgrunspeed)
+        pk_pills.setCostumeMoveSpeed(ent, ent.ElberrSpeedWalk, ent.ElberrSpeedRun)
     end)
 
     end)
@@ -2543,7 +2547,15 @@ end,
     jump=function(ply,ent)
 
     end
-})
+}, function(form)
+    -- The legacy damage branches are for Sandbox and NPCs.
+    form.hnsKillAPI = true
+    form.hnsAbilities = {
+        { id = "attack", name = "Ataque", key = IN_ATTACK, OnUse = form.attack.func },
+        { id = "overcharge", name = "Sobrecarga", key = IN_RELOAD, OnUse = form.reload },
+    }
+    form.attack, form.attack2, form.reload = nil, nil, nil
+end)
 
 local lastLookingstate = false
 

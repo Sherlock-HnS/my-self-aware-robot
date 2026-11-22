@@ -107,6 +107,7 @@ local ytimer2 = ScrH() - 200
 
 
 hook.Add("HUDPaint", "abiilityiconselberrPHASE2", function()
+    if SherlockHNS then return end
     local ply = LocalPlayer()
     if not IsValid(ply) then return end
 

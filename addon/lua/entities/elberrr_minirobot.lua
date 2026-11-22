@@ -354,7 +354,18 @@ function ENT:OnTakeDamage(dmg)
             explosion:SetScale(2)
             util.Effect("Explosion", explosion)
 
-            util.BlastDamage(self, self, self:GetPos(), 200, 25)
+            if SherlockHNS then
+                local owner = self:GetOwner()
+                if IsValid(owner) then
+                    for _, target in ipairs(ents.FindInSphere(self:GetPos(), 200)) do
+                        if target:IsPlayer() and target ~= owner then
+                            SherlockHNS.Kill(target, owner, { reason = "robot", inflictor = self })
+                        end
+                    end
+                end
+            else
+                util.BlastDamage(self, self, self:GetPos(), 200, 25)
+            end
 
             net.Start("highlightelberrrobot")
             net.WriteEntity(self:GetNWEntity("TracedENT"))
