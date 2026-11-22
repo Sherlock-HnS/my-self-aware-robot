@@ -1,4 +1,4 @@
-[PILL PACK] My Self-Aware Robot
+# [PILL PACK] My Self-Aware Robot
 
 ![Workshop preview](workshop-preview.jpg)
 
