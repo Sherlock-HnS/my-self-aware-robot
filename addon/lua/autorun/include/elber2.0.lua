@@ -911,7 +911,22 @@ end,
             local attachmentID = puppet:LookupAttachment("camera")
             local attachment = puppet:GetAttachment(attachmentID)
 
-            for k, v in pairs(ents.FindInSphere(ent:LocalToWorld(Vector(0, 0, 50)), 90)) do
+            local targetOrigin = ent:LocalToWorld(Vector(0, 0, 50))
+if SherlockHNS then
+    entity = SherlockHNS.FindVictim(ply, targetOrigin, 90, {
+        filter = function(v)
+        if v:GetClass() == "elberrr_minirobot" then return false end
+            local trace = util.TraceLine({
+                start = ent:EyePos(),
+                endpos = v:EyePos(),
+                filter = {ent, ply},
+                mask = MASK_VISIBLE
+            })
+            return not trace.Hit
+        end,
+    })
+else
+for k, v in pairs(ents.FindInSphere(ent:LocalToWorld(Vector(0, 0, 50)), 90)) do
                 if v:IsPlayer() or v:IsNextBot() or v:IsNPC() then
                     if v == ent or v == ply then continue end
                     if v:GetClass() == "elberrr_minirobot" then continue end
@@ -927,8 +942,9 @@ end,
                 end
             end
         end
+end
 
-        if SherlockHNS and IsValid(entity) and entity:IsPlayer() then
+if SherlockHNS and IsValid(entity) and entity:IsPlayer() then
             return pk_pills.playHNSJumpscare(ply, ent, entity, 4, {
                 camera = "makeragdollinvisduringjumpcam",
                 offset = 50,
@@ -2280,7 +2296,22 @@ end)
             local attachmentID = puppet:LookupAttachment("camera")
             local attachment = puppet:GetAttachment(attachmentID)
 
-            for k, v in pairs(ents.FindInSphere(ent:LocalToWorld(Vector(0, 0, 50)), 90)) do
+            local targetOrigin = ent:LocalToWorld(Vector(0, 0, 50))
+if SherlockHNS then
+    entity = SherlockHNS.FindVictim(ply, targetOrigin, 90, {
+        filter = function(v)
+
+            local trace = util.TraceLine({
+                start = ent:EyePos(),
+                endpos = v:EyePos(),
+                filter = {ent, ply},
+                mask = MASK_VISIBLE
+            })
+            return not trace.Hit
+        end,
+    })
+else
+for k, v in pairs(ents.FindInSphere(ent:LocalToWorld(Vector(0, 0, 50)), 90)) do
                 if v:IsPlayer() or v:IsNextBot() or v:IsNPC() then
                     if v == ent or v == ply then continue end
 
@@ -2295,8 +2326,9 @@ end)
                 end
             end
         end
+end
 
-        if SherlockHNS and IsValid(entity) and entity:IsPlayer() then
+if SherlockHNS and IsValid(entity) and entity:IsPlayer() then
             return pk_pills.playHNSJumpscare(ply, ent, entity, 8, {
                 camera = "ELBERJUMPCAM",
                 offset = 50,
