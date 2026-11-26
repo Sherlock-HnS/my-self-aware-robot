@@ -13,6 +13,7 @@ if !pcall(require,"pk_pills") then
 end
 
 AddCSLuaFile()
+AddCSLuaFile("include/elber2.0.lua")
 include("include/elber2.0.lua")
 
 
